@@ -1,0 +1,26 @@
+/ form_tag(controller: "people", action: "search", method: "get")
+=flash[:error]
+
+=form_with url:music_index_path, name: "song[]"do |f|
+    =f.label :name
+    =f.text_field "song[name]"
+    br
+    =f.label :singer
+    =f.text_field "song[singer]"
+    br
+    =f.label :note
+    =f.text_area "song[note]"
+    br
+    =f.label :url
+    =f.text_field "song[url]"
+    br
+    / ここでファイルをアップ
+    =f.label :file
+    br
+    =f.label :category
+    =f.text_field "song[category]"
+    br
+
+    br
+    =f.submit
+end

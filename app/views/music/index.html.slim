@@ -1,0 +1,23 @@
+table rules="all" frame="box"
+    thread
+        tr
+            th ID
+            th name
+            th singer
+            th note
+            th url
+            th category
+            th created_at
+            th updated_at
+    tbody
+        tr
+            -@list.each do |song|
+                td = song.id
+                td = song[:name]
+                td = song[:singer]
+                td = song[:note].empty? ? "空っぽ" : song[:note]
+                td = song[:url]
+                td = song[:category]
+                td = song[:created_at]
+                td = song[:updated_at]
+end
