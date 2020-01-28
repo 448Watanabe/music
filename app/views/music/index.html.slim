@@ -12,6 +12,7 @@ table rules="all" frame="box"
     tbody
         tr
             -@list.each do |song|
+            = song.methods
                 td = song.id
                 td = song[:name]
                 td = song[:singer]

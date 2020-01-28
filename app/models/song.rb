@@ -1,7 +1,8 @@
 class Song < ApplicationRecord
     # 他のモデルとの関係性
-    has_many :categories
+    has_many :category
+    has_one :audio
 
     # バリデーション
-    validate 
+    validate :name
 end

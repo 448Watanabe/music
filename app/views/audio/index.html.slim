@@ -1,0 +1,22 @@
+/ =@audios.first.methods
+
+table rules="all" frame="box"
+    thead
+        tr
+            th ID
+            th name
+            th file_name
+            th play
+            / th created_at
+            / th updated_at
+    tbody
+        - @audios.each do |audio|
+            tr
+                td = audio.id
+                td = audio.name.nil? ? "名前なし" : audio.name
+                td = audio[:file]
+                td
+                    audio controls=true autoplay=false loop=false muted=false
+                      source src=audio.file type="audio/mp3"
+
+                /  td = audio[:tile].nil? ? "タイトルはありません" : audio[:title];
