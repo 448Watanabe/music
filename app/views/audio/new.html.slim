@@ -1,0 +1,25 @@
+= flash[:error]
+
+p "新しいファイルを登録"
+= form_for(:audio, url: ".", as: :post) do |f|
+    / input type="file" name="s_file" accept="audio/*" multiple
+    = f.label :name
+    = f.text_field :name
+    br
+    = f.label :singer
+    = f.text_field :singer
+    br
+    = f.label :note
+    = f.text_field :note
+    br
+    = f.label :url
+    = f.text_field :url
+    br
+    = f.label :file
+    = f.file_field :file
+    br
+    = f.label :category
+    = f.text_field :category
+    br
+    = f.submit
+
