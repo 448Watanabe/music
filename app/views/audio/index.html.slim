@@ -1,3 +1,5 @@
+= flash[:error]
+= flash[:success]
 / =@audios.first.methods
 
 table rules="all" frame="box"
@@ -7,6 +9,8 @@ table rules="all" frame="box"
             th name
             th file_name
             th play
+            th 編集
+            th 削除
             / th created_at
             / th updated_at
     tbody
@@ -18,5 +22,6 @@ table rules="all" frame="box"
                 td
                     audio controls=true autoplay=false loop=false muted=false
                       source src=audio.file type="audio/mp3"
-
+                td =link_to "Edit", edit_audio_path(audio)
+                th =link_to "Destroy", audio_path(audio), :method => :delete
                 /  td = audio[:tile].nil? ? "タイトルはありません" : audio[:title];

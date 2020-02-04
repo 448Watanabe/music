@@ -6,6 +6,10 @@ class AudioController < ApplicationController
     def new
         @audio = Audio.new
     end
+
+    def show
+        @audio = Audio.find(params[:id])
+    end
     
     def create
         # if params[:audio].nil? # このバリデーションはpresent: trueで解消されない?
@@ -13,11 +17,45 @@ class AudioController < ApplicationController
         #     return render "new"
         # end
         @audio = Audio.new(audio_params(params))
-        if @audio.save!
+        if @audio.save # ビックリマークが付くと例外になる
+            flash[:success] = "新規作成成功"
             redirect_to audio_index_path
         else
-          flash[:error] = 'Errorですよ'
+          flash[:error] = '新規作成エラー'
           render "new"
+        end
+    end
+
+    def edit
+        logger.debug "++++++++++++++"
+        logger.debug @audio = Audio.find(params[:id])
+        logger.debug "++++++++++++++"
+    end
+
+    def update
+        logger.debug "++++++++++++++"
+        logger.debug @audio = Audio.find(params[:id])
+        logger.debug "++++++++++++++"
+        if @audio.update(audio_params(params))
+            flash[:success] = "編集成功"
+            redirect_to @audio # showに
+        else
+            flash[:error] = "編集エラー"
+            redirect_to "edit"
+        end
+        
+    end
+
+    def destroy
+        logger.debug "++++++++++++++"
+        logger.debug @audio = Audio.find(params[:id])
+        logger.debug "++++++++++++++"
+        if @audio.destroy
+            flash[:success] = "消去成功"
+            redirect_to audio_index_path # showに
+        else
+            flash[:error] = "編集エラー"
+            redirect_to audio_index_path
         end
     end
 
