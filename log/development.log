@@ -400,3 +400,2656 @@ Processing by AudioController#index as HTML
 Completed 200 OK in 363ms (Views: 284.3ms | ActiveRecord: 4.2ms)
 
 
+Started GET "/audio" for ::1 at 2020-02-01 07:12:34 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (2.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (51.7ms)
+Completed 200 OK in 368ms (Views: 303.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-01 07:12:56 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (7.2ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-01 07:13:22 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (9.4ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/" for ::1 at 2020-02-01 07:13:25 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (12.1ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/inddx" for ::1 at 2020-02-01 07:13:27 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/inddx" for ::1 at 2020-02-01 07:13:29 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/index" for ::1 at 2020-02-01 07:13:32 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/index" for ::1 at 2020-02-01 07:15:27 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/index" for ::1 at 2020-02-01 07:15:36 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/index" for ::1 at 2020-02-01 07:16:08 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/" for ::1 at 2020-02-01 07:16:09 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (7.9ms)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-01 07:16:09 +0900
+Started GET "/audio" for ::1 at 2020-02-01 07:16:09 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (9.0ms)
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (2.8ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 0.5ms)
+
+
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-01 07:19:04 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  Rendered audio/index.html.slim within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 62ms
+
+
+  
+ActionView::Template::Error (Unexpected text after closed tag
+  /Users/yoshia/Documents/ruby/music/app/views/audio/index.html.slim, Line 22, Column 21
+    td / link_to("Edit", edit_audio_path(audio))
+         ^
+):
+    19:                 td
+    20:                     audio controls=true autoplay=false loop=false muted=false
+    21:                       source src=audio.file type="audio/mp3"
+    22:                 td / link_to("Edit", edit_audio_path(audio))
+    23:                 /  td = audio[:tile].nil? ? "タイトルはありません" : audio[:title];
+  
+app/views/audio/index.html.slim:22
+Started GET "/audio" for ::1 at 2020-02-01 07:19:31 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (1.0ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (53.4ms)
+Completed 200 OK in 295ms (Views: 291.5ms | ActiveRecord: 2.1ms)
+
+
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" ORDER BY "audios"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/audio" for ::1 at 2020-02-01 07:23:43 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (7.7ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (39.8ms)
+Completed 200 OK in 295ms (Views: 251.1ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-01 07:24:03 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (6.1ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-01 07:24:05 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (7.2ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-01 07:24:17 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (7.7ms)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-01 07:24:28 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (6.6ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 07:38:09 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (180.7ms)
+Completed 200 OK in 297ms (Views: 294.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 07:40:51 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (6.7ms)
+Completed 200 OK in 21ms (Views: 18.1ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 07:41:01 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (14.0ms)
+Completed 200 OK in 42ms (Views: 37.1ms)
+
+
+Started GET "/audio/" for ::1 at 2020-02-01 07:41:02 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (10.5ms)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/index" for ::1 at 2020-02-01 07:41:02 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/index" for ::1 at 2020-02-01 07:41:04 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/index" for ::1 at 2020-02-01 07:41:04 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/index" for ::1 at 2020-02-01 07:43:42 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/index" for ::1 at 2020-02-01 07:43:46 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/index" for ::1 at 2020-02-01 07:44:23 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/index" for ::1 at 2020-02-01 07:44:32 +0900
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/" for ::1 at 2020-02-01 07:44:33 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (7.6ms)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-01 07:44:33 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (6.5ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-02-01 07:44:34 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (42.8ms)
+Completed 200 OK in 65ms (Views: 61.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-02-01 07:44:34 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (19.7ms)
+Completed 200 OK in 69ms (Views: 62.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 07:58:29 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+<ActionController::Parameters {"controller"=>"audio", "action"=>"edit", "id"=>"1"} permitted: false>
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (21.9ms)
+Completed 200 OK in 293ms (Views: 285.6ms)
+
+
+Started GET "/" for ::1 at 2020-02-01 07:59:54 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.9ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (24.2ms)
+Completed 200 OK in 83ms (Views: 37.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 07:59:56 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+<ActionController::Parameters {"controller"=>"audio", "action"=>"edit", "id"=>"1"} permitted: false>
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `id' for #<ActionController::Parameters:0x00007fc43867e298>):
+  
+app/controllers/audio_controller.rb:26:in `edit'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 08:00:39 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+<ActionController::Parameters {"controller"=>"audio", "action"=>"edit", "id"=>"1"} permitted: false>
+1
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (5.7ms)
+Completed 200 OK in 24ms (Views: 19.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 08:01:37 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c71d998>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.0ms)
+Completed 200 OK in 46ms (Views: 19.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 08:08:40 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43ea42450>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.2ms)
+Completed 200 OK in 26ms (Views: 21.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 08:08:44 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43eae0678>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (6.6ms)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 08:09:28 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43871f030>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (8.4ms)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:37:49 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc4384149d0>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (28.1ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `テスト写真' for #<Audio:0x00007fc4384149d0>):
+     5: = form_for(:audio, url: ".", as: :patch) do |f|
+     6:     / input type="file" name="s_file" accept="audio/*" multiple
+     7:     = f.label :name
+     8:     = f.text_field @audio.name
+     9:     br
+    10:     = f.label :singer
+    11:     = f.text_field :singer
+  
+app/views/audio/edit.html.slim:8:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240421484240'
+app/views/audio/edit.html.slim:5:in `_app_views_audio_edit_html_slim___3018604461986748145_70240421484240'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:38:09 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43a4c2678>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `テスト写真' for #<Audio:0x00007fc43a4c2678>):
+     5: = form_for(:audio, url: ".", as: :patch) do |f|
+     6:     / input type="file" name="s_file" accept="audio/*" multiple
+     7:     = f.label :name
+     8:     = f.text_field @audio[:name]
+     9:     br
+    10:     = f.label :singer
+    11:     = f.text_field :singer
+  
+app/views/audio/edit.html.slim:8:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240384190540'
+app/views/audio/edit.html.slim:5:in `_app_views_audio_edit_html_slim___3018604461986748145_70240384190540'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:39:29 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc438335de8>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `テスト写真' for #<Audio:0x00007fc438335de8>):
+     5: = form_for(:audio, url: ".", as: :patch) do |f|
+     6:     / input type="file" name="s_file" accept="audio/*" multiple
+     7:     = f.label :name
+     8:     = f.text_field @audio[:name]
+     9:     br
+    10:     = f.label :singer
+    11:     = f.text_field :singer
+  
+app/views/audio/edit.html.slim:8:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240421870300'
+app/views/audio/edit.html.slim:5:in `_app_views_audio_edit_html_slim___3018604461986748145_70240421870300'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:39:48 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43ecadb90>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (197.2ms)
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_field=' for #<ActionView::Helpers::FormBuilder:0x00007fc43d099468>
+Did you mean?  text_field):
+     5: = form_for(:audio, url: ".", as: :patch) do |f|
+     6:     / input type="file" name="s_file" accept="audio/*" multiple
+     7:     = f.label :name
+     8:     = f.text_field =@audio[:name]
+     9:     br
+    10:     = f.label :singer
+    11:     = f.text_field :singer
+  
+app/views/audio/edit.html.slim:8:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240421896920'
+app/views/audio/edit.html.slim:5:in `_app_views_audio_edit_html_slim___3018604461986748145_70240421896920'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:40:22 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc438170e68>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `テスト写真' for #<Audio:0x00007fc438170e68>):
+     5: = form_for(:audio, url: ".", as: :patch) do |f|
+     6:     / input type="file" name="s_file" accept="audio/*" multiple
+     7:     = f.label :name
+     8:     = f.text_field @audio[:name]
+     9:     br
+    10:     = f.label :singer
+    11:     = f.text_field :singer
+  
+app/views/audio/edit.html.slim:8:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240365780500'
+app/views/audio/edit.html.slim:5:in `_app_views_audio_edit_html_slim___3018604461986748145_70240365780500'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:41:13 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d13b150>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (14.7ms)
+Completed 200 OK in 43ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:41:27 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d2c1bc8>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (6.3ms)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:41:39 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d4d9348>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (9.3ms)
+Completed 200 OK in 25ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:42:08 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d583708>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `テスト写真' for #<Audio:0x00007fc43d583708>):
+     6: = form_for(@audio, url: ".", as: :patch) do |f|
+     7:     / input type="file" name="s_file" accept="audio/*" multiple
+     8:     = f.label :name
+     9:     = f.text_field(@audio[:name])
+    10:     br
+    11:     = f.label :singer
+    12:     = f.text_field :singer
+  
+app/views/audio/edit.html.slim:9:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240409747500'
+app/views/audio/edit.html.slim:6:in `_app_views_audio_edit_html_slim___3018604461986748145_70240409747500'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:42:18 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc438514a88>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (6.6ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/audio/1/" for ::1 at 2020-02-01 09:45:13 +0900
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for AudioController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:45:17 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d7eb040>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (13.2ms)
+Completed 200 OK in 88ms (Views: 47.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:45:44 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43e851650>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.0ms)
+Completed 200 OK in 25ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:45:57 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43a3ab708>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (6.8ms)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:50:22 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c5ae0d0>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (189.4ms)
+Completed 500 Internal Server Error in 200ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<ActionView::Helpers::FormBuilder:0x00007fc43c61f488>):
+     8: 
+     9:     / input type="file" name="s_file" accept="audio/*" multiple
+    10:     = f.label :name
+    11:     = f.name
+    12:     br
+    13:     = f.label :singer
+    14:     = f.text_field :singer
+  
+app/views/audio/edit.html.slim:11:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240401450360'
+app/views/audio/edit.html.slim:7:in `_app_views_audio_edit_html_slim___3018604461986748145_70240401450360'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:50:40 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c674118>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (6.8ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:50:55 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c56de18>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (5.1ms)
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:51:12 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc438664e60>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (6.4ms)
+Completed 200 OK in 24ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:51:47 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c423aa8>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (173.2ms)
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for #<ActionView::Helpers::FormBuilder:0x00007fc43d752f20>):
+     9: = form_for(@audio, url: ".", as: :patch) do |f|
+    10:     = f.methods
+    11:     br
+    12:     = f[:name]
+    13:     / input type="file" name="s_file" accept="audio/*" multiple
+    14:     / = f.label :name
+    15:     / = f.name
+  
+app/views/audio/edit.html.slim:12:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240400613000'
+app/views/audio/edit.html.slim:9:in `_app_views_audio_edit_html_slim___3018604461986748145_70240400613000'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:52:06 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d419700>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (239.4ms)
+Completed 500 Internal Server Error in 251ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<ActionView::Helpers::FormBuilder:0x00007fc43a2d19e0>):
+     9: = form_for(@audio, url: ".", as: :patch) do |f|
+    10:     = f.methods
+    11:     br
+    12:     = f.name
+    13:     / input type="file" name="s_file" accept="audio/*" multiple
+    14:     / = f.label :name
+    15:     / = f.name
+  
+app/views/audio/edit.html.slim:12:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240408980900'
+app/views/audio/edit.html.slim:9:in `_app_views_audio_edit_html_slim___3018604461986748145_70240408980900'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:52:41 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43855dd78>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (258.0ms)
+Completed 500 Internal Server Error in 518ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<ActionView::Helpers::FormBuilder:0x00007fc43a380b48>):
+    12:     br
+    13:     / input type="file" name="s_file" accept="audio/*" multiple
+    14:     = f.label :name
+    15:     = f.text_field f.name
+    16:     br
+    17:     / = f.label :singer
+    18:     / = f.text_field :singer
+  
+app/views/audio/edit.html.slim:15:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240367768740'
+app/views/audio/edit.html.slim:9:in `_app_views_audio_edit_html_slim___3018604461986748145_70240367768740'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:59:44 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43ec03708>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (25.2ms)
+Completed 200 OK in 55ms (Views: 47.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 09:59:59 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (2.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43a452e90>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (6.1ms)
+Completed 200 OK in 27ms (Views: 17.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:00:14 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc4387148d8>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `singer' for nil:NilClass):
+     5: br
+     6: = @audio.file
+     7: br
+     8: = @aduio.singer
+     9: 
+    10: p "新しいファイルを登録"
+    11: = form_for(@audio, url: ".", as: :patch) do |f|
+  
+app/views/audio/edit.html.slim:8:in `_app_views_audio_edit_html_slim___3018604461986748145_70240368622020'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:00:15 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43ea4b640>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `singer' for nil:NilClass):
+     5: br
+     6: = @audio.file
+     7: br
+     8: = @aduio.singer
+     9: 
+    10: p "新しいファイルを登録"
+    11: = form_for(@audio, url: ".", as: :patch) do |f|
+  
+app/views/audio/edit.html.slim:8:in `_app_views_audio_edit_html_slim___3018604461986748145_70240420646540'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:00:29 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43e9c8e20>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (5.7ms)
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:01:04 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c65c5e0>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.1ms)
+Completed 200 OK in 27ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:01:11 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c5e5cb0>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.4ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:03:30 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43867cf38>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.0ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:03:33 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43a38a3c8>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (8.0ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:16:06 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d7e2008>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.7ms)
+Completed 200 OK in 24ms (Views: 20.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:16:22 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d758c18>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (8.3ms)
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:17:46 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d59bab0>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (182.7ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `textarea' for #<ActionView::Helpers::FormBuilder:0x00007fc43d522548>
+Did you mean?  text_area):
+    17:     = f.text_field :singer
+    18:     br
+    19:     = f.label :note
+    20:     = f.textarea :note
+    21:     br
+    22:     = f.label :url
+    23:     = f.text_field :url
+  
+app/views/audio/edit.html.slim:20:in `block in _app_views_audio_edit_html_slim___3018604461986748145_70240409788220'
+app/views/audio/edit.html.slim:11:in `_app_views_audio_edit_html_slim___3018604461986748145_70240409788220'
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:18:23 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43eb03f60>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (19.7ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:18:32 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43e969ec0>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (8.5ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:21:39 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c4e3a60>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (10.6ms)
+Completed 200 OK in 35ms (Views: 29.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:21:52 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c443b78>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (9.0ms)
+Completed 200 OK in 25ms (Views: 21.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:21:59 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c386118>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (10.4ms)
+Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:22:13 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d1b0310>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.1ms)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-01 10:22:28 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc438e67248>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (11.0ms)
+Completed 200 OK in 31ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 06:56:33 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc4386447f0>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (10.9ms)
+Completed 200 OK in 50ms (Views: 25.6ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 06:56:40 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LEuLu07tHop5eQxWbRi3zj46412orX4A9VJ/UwVAPu4iDKaLmWnW2JVFw2+hckkH3CjXyjIcyADwkNUt8aYYTg==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"アップデートテスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c5bf150>
+++++++++++++++
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:50:in `audio_params'
+app/controllers/audio_controller.rb:34:in `update'
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 06:58:11 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LEuLu07tHop5eQxWbRi3zj46412orX4A9VJ/UwVAPu4iDKaLmWnW2JVFw2+hckkH3CjXyjIcyADwkNUt8aYYTg==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"アップデートテスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c74d490>
+++++++++++++++
+Completed 400 Bad Request in 21ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:54:in `audio_params'
+app/controllers/audio_controller.rb:38:in `update'
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 06:58:19 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LEuLu07tHop5eQxWbRi3zj46412orX4A9VJ/UwVAPu4iDKaLmWnW2JVFw2+hckkH3CjXyjIcyADwkNUt8aYYTg==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"アップデートテスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c75c8c8>
+++++++++++++++
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:54:in `audio_params'
+app/controllers/audio_controller.rb:38:in `update'
+Started GET "/audio/1/" for ::1 at 2020-02-02 06:58:24 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 131ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::UnknownFormat (AudioController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/1/" for ::1 at 2020-02-02 07:00:20 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (3.3ms)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/" for ::1 at 2020-02-02 07:02:04 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (3.5ms)
+Completed 200 OK in 36ms (Views: 16.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:02:07 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c7d1740>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (9.3ms)
+Completed 200 OK in 27ms (Views: 22.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:02:22 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dGsxpjkZF4K43+PD5naYmEUWevBj09sVO+XvuinvtAx6LByW7p3f0FTjLPoqHGZRpwROZ/libRU+J0XE3QmSrA==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"アップデートテスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43a4a95d8>
+++++++++++++++
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:54:in `audio_params'
+app/controllers/audio_controller.rb:38:in `update'
+Started GET "/audio/1/" for ::1 at 2020-02-02 07:02:44 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/" for ::1 at 2020-02-02 07:04:21 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (2.9ms)
+Completed 200 OK in 59ms (Views: 18.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:04:34 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43e9ab000>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (8.2ms)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:04:44 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fGSqj44asIPrN3xeMpFMIRaQWfhH2kIp4cbfIIlo3kxyI4e/WZ540QcLs2f++7Lo9IJtb91r9CnkBHVefY747A==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テストアップデート\r\n\r\n", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c5edaf0>
+++++++++++++++
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:54:in `audio_params'
+app/controllers/audio_controller.rb:38:in `update'
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:05:11 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c5d5f68>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (9.1ms)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:06:19 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aZVIuznqEmixpMKABgAgOglV8R+Eld40+gSVLDrCv2xn0mWL7m7aOl2YDbnKat7z60fFiB4kaDT/xj9SziSZzA==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テストアップデート", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc438626548>
+++++++++++++++
+Completed 400 Bad Request in 19ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:56:in `audio_params'
+app/controllers/audio_controller.rb:39:in `update'
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:06:44 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aZVIuznqEmixpMKABgAgOglV8R+Eld40+gSVLDrCv2xn0mWL7m7aOl2YDbnKat7z60fFiB4kaDT/xj9SziSZzA==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テストアップデート", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d7f3ab0>
+++++++++++++++
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:56:in `audio_params'
+app/controllers/audio_controller.rb:39:in `update'
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:06:55 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d7c2848>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.3ms)
+Completed 200 OK in 30ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:07:01 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CgjXXWfhO6X35MtFt129CyJjCIHTvf6tKAiq0JhrMswET/ptsGXz9xvYBHx7N0PCwHE8FkkMSK0tygCubI0UbA==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc4385ad530>
+++++++++++++++
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:56:in `audio_params'
+app/controllers/audio_controller.rb:39:in `update'
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:09:15 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CgjXXWfhO6X35MtFt129CyJjCIHTvf6tKAiq0JhrMswET/ptsGXz9xvYBHx7N0PCwHE8FkkMSK0tygCubI0UbA==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43848de48>
+++++++++++++++
+Completed 400 Bad Request in 23ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:58:in `audio_params'
+app/controllers/audio_controller.rb:40:in `update'
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:09:18 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d4a19c0>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.8ms)
+Completed 200 OK in 27ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:09:23 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mWEZ86p5nd8x8PwjFVUdp3XImVYo1ENc+Wc1s4AgOX2XJjTDff1Vjd3MMxrZP+Nul9qtwbJl9Vz8pZ/NdMYf3Q==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"アップデート\r\n\r\n", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d291590>
+++++++++++++++
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:58:in `audio_params'
+app/controllers/audio_controller.rb:40:in `update'
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:10:29 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mWEZ86p5nd8x8PwjFVUdp3XImVYo1ENc+Wc1s4AgOX2XJjTDff1Vjd3MMxrZP+Nul9qtwbJl9Vz8pZ/NdMYf3Q==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"アップデート\r\n\r\n", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc439702308>
+++++++++++++++
+++++++++++++++
+Completed 400 Bad Request in 17ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:60:in `audio_params'
+app/controllers/audio_controller.rb:40:in `update'
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:10:35 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc438192ec8>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (19.0ms)
+Completed 200 OK in 41ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:10:41 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wFXL5e+WJcFq3oLSbBVWxq/mvK23WMKhJ+1zkwNzaffOEubVOBLtk4biTeugf6gPTfSIOi3pdKEiL9nt95VPVw==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テスト\r\n", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43a519a68>
+++++++++++++++
+++++++++++++++
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:60:in `audio_params'
+app/controllers/audio_controller.rb:40:in `update'
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:12:03 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43ebd8288>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (8.6ms)
+Completed 200 OK in 41ms (Views: 21.1ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:12:06 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApTD/VZ6k5wCIVIOizkf/1IVIz45WstkHAou6Kfnf98M0+7Ngf5bzu4dnTdHU+E2sAcXqaPrfWQZyISWUwFZfw==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+<ActionController::Parameters {"utf8"=>"✓", "_method"=>"patch", "authenticity_token"=>"ApTD/VZ6k5wCIVIOizkf/1IVIz45WstkHAou6Kfnf98M0+7Ngf5bzu4dnTdHU+E2sAcXqaPrfWQZyISWUwFZfw==", "patch"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "controller"=>"audio", "action"=>"update", "id"=>"1"} permitted: false>
+++++++++++++++
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43eb32ce8>
+++++++++++++++
+++++++++++++++
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:63:in `audio_params'
+app/controllers/audio_controller.rb:43:in `update'
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:13:05 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43eb02548>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (7.4ms)
+Completed 200 OK in 30ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:13:42 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c734378>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (11.7ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:13:58 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c695d40>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (8.6ms)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/audio/1/update" for ::1 at 2020-02-02 07:14:02 +0900
+  
+ActionController::RoutingError (No route matches [PATCH] "/audio/1/update"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/audio/1/update" for ::1 at 2020-02-02 07:14:26 +0900
+  
+ActionController::RoutingError (No route matches [PATCH] "/audio/1/update"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/1" for ::1 at 2020-02-02 07:14:30 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:14:35 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43e92a1f8>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (6.9ms)
+Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/audio/1/" for ::1 at 2020-02-02 07:14:40 +0900
+Processing by AudioController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S0m3tMq1p75XJgyuFxgXYiBvglSE+gCLnvkkpZ9KwxFFDpqEHTFv7Lsaw5fbcumrwn22wx5LtoubO47ba6zlsQ==", "post"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+<ActionController::Parameters {"utf8"=>"✓", "_method"=>"patch", "authenticity_token"=>"S0m3tMq1p75XJgyuFxgXYiBvglSE+gCLnvkkpZ9KwxFFDpqEHTFv7Lsaw5fbcumrwn22wx5LtoubO47ba6zlsQ==", "post"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "controller"=>"audio", "action"=>"update", "id"=>"1"} permitted: false>
+++++++++++++++
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43e883970>
+++++++++++++++
+++++++++++++++
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: audio):
+  
+app/controllers/audio_controller.rb:63:in `audio_params'
+app/controllers/audio_controller.rb:43:in `update'
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:15:22 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43866d790>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (8.6ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/audio/1/" for ::1 at 2020-02-02 07:15:40 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/audio/1"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/audio/1/" for ::1 at 2020-02-02 07:16:02 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/audio/1"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/1/" for ::1 at 2020-02-02 07:16:04 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:16:09 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc4385f44f8>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (9.0ms)
+Completed 200 OK in 27ms (Views: 21.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/audio/1/" for ::1 at 2020-02-02 07:16:12 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/audio/1"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:16:46 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d6e0ce0>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (9.6ms)
+Completed 200 OK in 28ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/audio/1/" for ::1 at 2020-02-02 07:16:49 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/audio/1"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:17:34 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43a2c8818>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (8.4ms)
+Completed 200 OK in 25ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:19:57 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d349820>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (9.5ms)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/audio/1" for ::1 at 2020-02-02 07:20:09 +0900
+Processing by AudioController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ktMncpWQNe+hwUR6jCt5Tl3zmHFfmnCBF28R+g51nFyclApCQhT9vU39i0NAQYeHv+Gs5sUrxoESrbuE+pO6/A==", "audio"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "id"=>"1"}
+++++++++++++++
+<ActionController::Parameters {"utf8"=>"✓", "_method"=>"patch", "authenticity_token"=>"ktMncpWQNe+hwUR6jCt5Tl3zmHFfmnCBF28R+g51nFyclApCQhT9vU39i0NAQYeHv+Gs5sUrxoESrbuE+pO6/A==", "audio"=>{"name"=>"テスト写真", "singer"=>"", "note"=>"テスト", "url"=>"", "category"=>""}, "commit"=>"Update Audio", "controller"=>"audio", "action"=>"update", "id"=>"1"} permitted: false>
+++++++++++++++
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43d112cf0>
+++++++++++++++
+++++++++++++++
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAudio Update (0.5ms)[0m  [1m[33mUPDATE "audios" SET "note" = ?, "updated_at" = ? WHERE "audios"."id" = ?[0m  [["note", "テスト"], ["updated_at", "2020-02-01 22:20:09.880554"], ["id", 1]]
+  [1m[35m (34.5ms)[0m  [1m[36mcommit transaction[0m
+true
+++++++++++++++
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/audio/1
+Completed 200 OK in 47ms (ActiveRecord: 35.3ms)
+
+
+Started GET "/audio/1" for ::1 at 2020-02-02 07:20:09 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (4.2ms)
+Completed 200 OK in 25ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/1/edit" for ::1 at 2020-02-02 07:21:01 +0900
+Processing by AudioController#edit as HTML
+  Parameters: {"id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc4381e0448>
+++++++++++++++
+  Rendering audio/edit.html.slim within layouts/application
+  Rendered audio/edit.html.slim within layouts/application (18.9ms)
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/audio/" for ::1 at 2020-02-02 07:21:13 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (9.8ms)
+Completed 200 OK in 25ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/new" for ::1 at 2020-02-02 07:21:22 +0900
+Processing by AudioController#new as HTML
+  Rendering audio/new.html.slim within layouts/application
+  Rendered audio/new.html.slim within layouts/application (8.3ms)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audio/new" for ::1 at 2020-02-02 09:28:53 +0900
+Processing by AudioController#new as HTML
+  Rendering audio/new.html.slim within layouts/application
+  Rendered audio/new.html.slim within layouts/application (8.3ms)
+Completed 200 OK in 38ms (Views: 20.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-02 09:28:57 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (8.2ms)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/audio/1" for ::1 at 2020-02-02 09:28:58 +0900
+Processing by AudioController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A4PSRBONTkSBX/sgSpoLymp9amhUzY2RTYGBoHEdJTMNxP90xAmGFm1jNBmG8PUDiG9e/858O5FIQyvehfsDkw==", "id"=>"1"}
+++++++++++++++
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+#<Audio:0x00007fc43c5753e8>
+++++++++++++++
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAudio Destroy (0.4ms)[0m  [1m[31mDELETE FROM "audios" WHERE "audios"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 2.2ms)
+
+
+  
+NoMethodError (undefined method `audios_url' for #<AudioController:0x00007fc43c5847d0>
+Did you mean?  audio_url):
+  
+app/controllers/audio_controller.rb:55:in `destroy'
+Started GET "/audio" for ::1 at 2020-02-02 09:29:24 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (7.0ms)
+Completed 200 OK in 27ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/new" for ::1 at 2020-02-02 09:29:40 +0900
+Processing by AudioController#new as HTML
+  Rendering audio/new.html.slim within layouts/application
+  Rendered audio/new.html.slim within layouts/application (7.6ms)
+Completed 200 OK in 39ms (Views: 22.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/audio/" for ::1 at 2020-02-02 09:29:46 +0900
+Processing by AudioController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AoyWPRaRiN/mzbwP7oGN62cw5nIwhtgaQCy7nn0rcI0My7sNwRVAjQrxczYi63MihSLS5ao3bhpF7hHgic1WLQ==", "audio"=>{"name"=>"テスト", "singer"=>"", "note"=>"", "url"=>"", "category"=>""}, "commit"=>"Save Audio"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: File can't be blank):
+  
+app/controllers/audio_controller.rb:20:in `create'
+Started GET "/audio/new" for ::1 at 2020-02-02 09:30:41 +0900
+Processing by AudioController#new as HTML
+  Rendering audio/new.html.slim within layouts/application
+  Rendered audio/new.html.slim within layouts/application (8.5ms)
+Completed 200 OK in 41ms (Views: 22.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/audio/" for ::1 at 2020-02-02 09:30:48 +0900
+Processing by AudioController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0JLeuK/g0ibdQrKMigbBbSSdPVA82UcLWPxP/clo6Ave1fOIeGQadDF+fbVGbD+kxo8Jx6Zo8QtdPuWDPY7Oqw==", "audio"=>{"name"=>"テスト", "singer"=>"", "note"=>"", "url"=>"", "category"=>""}, "commit"=>"Save Audio"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering audio/new.html.slim within layouts/application
+  Rendered audio/new.html.slim within layouts/application (7.7ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/audio/" for ::1 at 2020-02-02 09:30:57 +0900
+Processing by AudioController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Yx9dY4qJWAPvZDwF8C6ZzzhARitHIC7ZivL6e+zf3Tvy1BFWa7tMuOBX8nbqkSu3vM1jzetNrtj6WGXG1VZ1A==", "audio"=>{"name"=>"テスト", "singer"=>"", "note"=>"", "url"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fc43d710da0 @tempfile=#<Tempfile:/var/folders/r9/k6b22pxj5r93nc0q0wxwzb5c0000gn/T/RackMultipart20200202-18996-2avi2s.jpg>, @original_filename="高野麻里佳.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"audio[file]\"; filename=\"\xE9\xAB\x98\xE9\x87\x8E\xE9\xBA\xBB\xE9\x87\x8C\xE4\xBD\xB3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "category"=>""}, "commit"=>"Save Audio"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAudio Create (0.6ms)[0m  [1m[32mINSERT INTO "audios" ("file", "created_at", "updated_at", "name", "singer", "note", "url", "category") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["file", "高野麻里佳.jpg"], ["created_at", "2020-02-02 00:30:57.676019"], ["updated_at", "2020-02-02 00:30:57.676019"], ["name", "テスト"], ["singer", ""], ["note", ""], ["url", ""], ["category", ""]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/audio
+Completed 302 Found in 46ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-02 09:30:57 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (7.1ms)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/audio/2" for ::1 at 2020-02-02 09:31:03 +0900
+Processing by AudioController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LTkWVdHUCLGS0nQuxolLJseoNZ6BhMtV6FlsEnAndwYjfjtlBlDA437uuxcK47XvJboBCRs1fVXtm8ZshMFRpg==", "id"=>"2"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+#<Audio:0x00007fc43c277e98>
+++++++++++++++
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAudio Destroy (0.5ms)[0m  [1m[31mDELETE FROM "audios" WHERE "audios"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 2.1ms)
+
+
+  
+NoMethodError (undefined method `audios_url' for #<AudioController:0x00007fc43d4a24b0>
+Did you mean?  audio_url):
+  
+app/controllers/audio_controller.rb:55:in `destroy'
+Started GET "/audio" for ::1 at 2020-02-02 09:31:45 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (12.1ms)
+Completed 200 OK in 34ms (Views: 25.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/audio/new" for ::1 at 2020-02-02 09:31:50 +0900
+Processing by AudioController#new as HTML
+  Rendering audio/new.html.slim within layouts/application
+  Rendered audio/new.html.slim within layouts/application (14.6ms)
+Completed 200 OK in 60ms (Views: 42.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/audio/" for ::1 at 2020-02-02 09:31:58 +0900
+Processing by AudioController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N4mUlwfz4Ktfh8S6SjPZMshylQZnn08J3TKQcDAVEZ45zrmn0Hco+bO7C4OGWSf7KmChkf0u+QnY8DoOxPM3Pg==", "audio"=>{"name"=>"テスtp", "singer"=>"", "note"=>"", "url"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fc43d38bc20 @tempfile=#<Tempfile:/var/folders/r9/k6b22pxj5r93nc0q0wxwzb5c0000gn/T/RackMultipart20200202-18996-1u70lvw.jpg>, @original_filename="高野麻里佳.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"audio[file]\"; filename=\"\xE9\xAB\x98\xE9\x87\x8E\xE9\xBA\xBB\xE9\x87\x8C\xE4\xBD\xB3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "category"=>""}, "commit"=>"Save Audio"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAudio Create (0.6ms)[0m  [1m[32mINSERT INTO "audios" ("file", "created_at", "updated_at", "name", "singer", "note", "url", "category") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["file", "高野麻里佳.jpg"], ["created_at", "2020-02-02 00:31:58.190207"], ["updated_at", "2020-02-02 00:31:58.190207"], ["name", "テスtp"], ["singer", ""], ["note", ""], ["url", ""], ["category", ""]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 2.1ms)
+
+
+  
+NameError (undefined local variable or method `audios_index_path' for #<AudioController:0x00007fc43d338bd8>
+Did you mean?  audio_index_path
+               audio_index_url):
+  
+app/controllers/audio_controller.rb:22:in `create'
+Started GET "/audio/new" for ::1 at 2020-02-02 09:32:30 +0900
+Processing by AudioController#new as HTML
+  Rendering audio/new.html.slim within layouts/application
+  Rendered audio/new.html.slim within layouts/application (7.4ms)
+Completed 200 OK in 38ms (Views: 18.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/audio/" for ::1 at 2020-02-02 09:32:39 +0900
+Processing by AudioController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p3Vmwlpd/uiWCfKCj6e50WsPxIbvLwuiL1dY82N9AEapMkvyjdk2uno1PbtDzUcYiR3wEXWevaIqlfKNl5sm5g==", "audio"=>{"name"=>"テスト", "singer"=>"", "note"=>"", "url"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fc43c6bc940 @tempfile=#<Tempfile:/var/folders/r9/k6b22pxj5r93nc0q0wxwzb5c0000gn/T/RackMultipart20200202-18996-sljxpx.jpg>, @original_filename="高野麻里佳.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"audio[file]\"; filename=\"\xE9\xAB\x98\xE9\x87\x8E\xE9\xBA\xBB\xE9\x87\x8C\xE4\xBD\xB3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "category"=>""}, "commit"=>"Save Audio"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAudio Create (0.6ms)[0m  [1m[32mINSERT INTO "audios" ("file", "created_at", "updated_at", "name", "singer", "note", "url", "category") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["file", "高野麻里佳.jpg"], ["created_at", "2020-02-02 00:32:39.670368"], ["updated_at", "2020-02-02 00:32:39.670368"], ["name", "テスト"], ["singer", ""], ["note", ""], ["url", ""], ["category", ""]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/audio
+Completed 302 Found in 45ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-02 09:32:39 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (7.6ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/audio/3" for ::1 at 2020-02-02 09:32:41 +0900
+Processing by AudioController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1hhn7lPGkRvECSelcQNTxEHTB5X/fqYpuckKNfRTZFvYX0rehEJZSSg16Jy9aa0No8EzAmXPECm8C6BLALVC+w==", "id"=>"3"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+#<Audio:0x00007fc43c5d63c8>
+++++++++++++++
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAudio Destroy (0.4ms)[0m  [1m[31mDELETE FROM "audios" WHERE "audios"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 1.8ms)
+
+
+  
+NoMethodError (undefined method `audios_url' for #<AudioController:0x00007fc4386a55c8>
+Did you mean?  audio_url):
+  
+app/controllers/audio_controller.rb:55:in `destroy'
+Started GET "/audio/3" for ::1 at 2020-02-02 09:33:12 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 10ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Audio with 'id'=3):
+  
+app/controllers/audio_controller.rb:11:in `show'
+Started GET "/audio" for ::1 at 2020-02-02 09:33:14 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (37.3ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/audio/4" for ::1 at 2020-02-02 09:33:16 +0900
+Processing by AudioController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8Jlz48a/afGpbg6eW+f+n140W0ow1AzFuLMwe96sneP+3l7TETuho0VSwaeXjQBWvCZv3aplusW9cZoFKkq7Qw==", "id"=>"4"}
+++++++++++++++
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+#<Audio:0x00007fc43d7b21a0>
+++++++++++++++
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAudio Destroy (0.4ms)[0m  [1m[31mDELETE FROM "audios" WHERE "audios"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/audio
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/audio" for ::1 at 2020-02-02 09:33:16 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  Rendered audio/index.html.slim within layouts/application (8.6ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+

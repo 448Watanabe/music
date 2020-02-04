@@ -1,0 +1,23 @@
+= flash[:error]
+p "ファイルを編集"
+center
+    / = form_(:audio, url: "./", as: :patch) do |f|
+    = form_with model: @audio do |f|
+        / input type="file" name="s_file" accept="audio/*" multiple
+        = f.label :name
+        = f.text_field :name
+        br
+        = f.label :singer
+        = f.text_field :singer
+        br
+        = f.label :note
+        br
+        = f.text_area :note, rows: 10, cols: 40
+        br
+        = f.label :url
+        = f.text_field :url
+        br
+        = f.label :category
+        = f.text_field :category
+        br
+        = f.submit
