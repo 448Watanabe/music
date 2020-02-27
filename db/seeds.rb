@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Audio.create!(name: '猫', file: open("#{Rails.root}/db/fixtures/CRAZY_KEN_BAND_猫.mp3"))
