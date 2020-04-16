@@ -1,27 +1,27 @@
 = flash[:error]
 = flash[:success]
 / =@audios.first.methods
-
-table rules="all" frame="box"
-    thead
-        tr
-            th ID
-            th name
-            th file_name
-            th play
-            th 編集
-            th 削除
-            / th created_at
-            / th updated_at
-    tbody
-        - @audios.each do |audio|
+center
+    table rules="all" frame="box" class="table"
+        thead
             tr
-                td = audio.id
-                td = audio.name.nil? ? "名前なし" : audio.name
-                td = audio[:file]
-                td
-                    audio controls=true autoplay=false loop=false muted=false
-                      source src=audio.file type="audio/mp3"
-                td =link_to "Edit", edit_audio_path(audio)
-                th =link_to "Destroy", audio_path(audio), :method => :delete
-                /  td = audio[:tile].nil? ? "タイトルはありません" : audio[:title];
+                th ID
+                th name
+                th file_name
+                th play
+                th 編集
+                th 削除
+                / th created_at
+                / th updated_at
+        tbody
+            - @audios.each do |audio|
+                tr
+                    td = audio.id
+                    td = audio.name.nil? ? "名前なし" : audio.name
+                    td = audio[:file]
+                    td
+                        audio controls=true autoplay=false loop=false muted=false
+                          source src=audio.file type="audio/mp3"
+                    td =link_to "Edit", edit_audio_path(audio)
+                    th =link_to "Destroy", audio_path(audio), :method => :delete
+                    /  td = audio[:tile].nil? ? "タイトルはありません" : audio[:title];
