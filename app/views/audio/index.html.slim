@@ -16,7 +16,7 @@ center
         tbody
             - @audios.each do |audio|
                 tr
-                    td = audio.id
+                    td =link_to audio.id, audio_path(audio)
                     td = audio.name.nil? ? "名前なし" : audio.name
                     td = audio[:file]
                     td

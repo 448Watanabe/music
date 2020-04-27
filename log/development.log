@@ -3053,3 +3053,1252 @@ Processing by AudioController#index as HTML
 Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.2ms)
 
 
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/audio" for ::1 at 2020-04-26 15:12:47 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/yoshiya/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (1.8ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  ↳ app/views/audio/index.html.slim:17
+  Rendered audio/index.html.slim within layouts/application (27.6ms)
+Completed 200 OK in 954ms (Views: 931.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/audio/new" for ::1 at 2020-04-26 15:13:05 +0900
+Processing by AudioController#new as HTML
+  Rendering audio/new.html.slim within layouts/application
+  Rendered audio/new.html.slim within layouts/application (41.3ms)
+Completed 200 OK in 104ms (Views: 68.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/audio/" for ::1 at 2020-04-26 15:15:26 +0900
+Processing by AudioController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JhQ7NMwsLxpRlQdHJ/jLckjCT9jY+QH6m7BgcUmxJQR9rXqS3iiENyhZuILHWK9wxq38u5Y99Ke1Q6DgZwAnMA==", "audio"=>{"name"=>"テスト名前1", "singer"=>"Billie Eilishのファン", "note"=>"20秒後の歌い方がカッコイイ", "url"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fe37fdc34c0 @tempfile=#<Tempfile:/var/folders/nz/17ppmlfx7pd51z1p2826rv_80000gn/T/RackMultipart20200426-31704-1gfxwg7.mp3>, @original_filename="20sec Billie Eilish Watches Fan Covers on YouTube _ Glamour_21Z4RIOFhMA.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"audio[file]\"; filename=\"20sec Billie Eilish Watches Fan Covers on YouTube _ Glamour_21Z4RIOFhMA.mp3\"\r\nContent-Type: audio/mp3\r\n">, "category"=>"イギリス 洋楽"}, "commit"=>"Save Audio"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/audio_controller.rb:20
+  [1m[36mAudio Create (3.2ms)[0m  [1m[32mINSERT INTO "audios" ("file", "created_at", "updated_at", "name", "singer", "note", "url", "category") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["file", "20sec_Billie_Eilish_Watches_Fan_Covers_on_YouTube___Glamour_21Z4RIOFhMA.mp3"], ["created_at", "2020-04-26 06:15:27.041889"], ["updated_at", "2020-04-26 06:15:27.041889"], ["name", "テスト名前1"], ["singer", "Billie Eilishのファン"], ["note", "20秒後の歌い方がカッコイイ"], ["url", ""], ["category", "イギリス 洋楽"]]
+  ↳ app/controllers/audio_controller.rb:20
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/audio_controller.rb:20
+Redirected to http://localhost:3000/audio
+Completed 302 Found in 157ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/audio" for ::1 at 2020-04-26 15:15:27 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  ↳ app/views/audio/index.html.slim:17
+  Rendered audio/index.html.slim within layouts/application (13.0ms)
+Completed 200 OK in 61ms (Views: 54.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio" for ::1 at 2020-04-26 15:57:39 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/yoshiya/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (1.3ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  ↳ app/views/audio/index.html.slim:17
+  Rendered audio/index.html.slim within layouts/application (41.3ms)
+Completed 200 OK in 933ms (Views: 914.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/sound.mp3" for ::1 at 2020-04-26 15:57:41 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/sound.mp3"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/audio" for ::1 at 2020-04-26 15:59:31 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  ↳ app/views/audio/index.html.slim:17
+  Rendered audio/index.html.slim within layouts/application (17.3ms)
+Completed 200 OK in 581ms (Views: 569.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio" for ::1 at 2020-04-26 16:28:41 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  ↳ app/views/audio/index.html.slim:17
+  Rendered audio/index.html.slim within layouts/application (10.9ms)
+Completed 200 OK in 433ms (Views: 427.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 16:28:45 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (6.5ms)
+Completed 200 OK in 156ms (Views: 118.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 16:31:38 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (361.3ms)
+Completed 500 Internal Server Error in 377ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `audio' for #<#<Class:0x00007fcfd6339f70>:0x00007fcfd7a8e630>
+Did you mean?  @audio):
+    15:             th =@audio.name
+    16:             th
+    17:                 audio controls=true autoplay=false loop=false muted=false
+    18:                           source src=audio.file type="audio/mp3"
+  
+app/views/audio/show.html.slim:18:in `_app_views_audio_show_html_slim___3792277874332060843_70265326565320'
+Started GET "/audio/5" for ::1 at 2020-04-26 16:32:09 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (6.1ms)
+Completed 200 OK in 65ms (Views: 54.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 16:32:44 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.7ms)
+Completed 200 OK in 65ms (Views: 48.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 16:34:19 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (6.3ms)
+Completed 200 OK in 72ms (Views: 59.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 16:43:19 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (15.4ms)
+Completed 200 OK in 489ms (Views: 480.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 16:48:03 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (8.9ms)
+Completed 200 OK in 456ms (Views: 445.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 16:52:02 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (6.7ms)
+Completed 200 OK in 62ms (Views: 50.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 16:52:59 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (15.0ms)
+Completed 200 OK in 74ms (Views: 63.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 16:54:06 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.6ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (8.5ms)
+Completed 200 OK in 59ms (Views: 41.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/audio" for ::1 at 2020-04-26 17:01:04 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (1.3ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  ↳ app/views/audio/index.html.slim:17
+  Rendered audio/index.html.slim within layouts/application (20.2ms)
+Completed 200 OK in 96ms (Views: 88.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/audio/new" for ::1 at 2020-04-26 17:01:04 +0900
+Processing by AudioController#new as HTML
+  Rendering audio/new.html.slim within layouts/application
+  Rendered audio/new.html.slim within layouts/application (94.3ms)
+Completed 200 OK in 152ms (Views: 136.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audio" for ::1 at 2020-04-26 17:01:06 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  ↳ app/views/audio/index.html.slim:17
+  Rendered audio/index.html.slim within layouts/application (10.4ms)
+Completed 200 OK in 47ms (Views: 41.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:01:07 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (1.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (11.8ms)
+Completed 200 OK in 73ms (Views: 62.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/audio" for ::1 at 2020-04-26 17:01:12 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  ↳ app/views/audio/index.html.slim:17
+  Rendered audio/index.html.slim within layouts/application (7.2ms)
+Completed 200 OK in 46ms (Views: 40.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:07:31 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.6ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (25.7ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "audio.coffee.js" is not present in the asset pipeline.):
+    1: = javascript_include_tag 'audio.coffee'
+    2: 
+    3: 
+    4: = flash[:errror]
+  
+app/views/audio/show.html.slim:1:in `_app_views_audio_show_html_slim___3792277874332060843_70265335037600'
+Started GET "/audio/5" for ::1 at 2020-04-26 17:14:46 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (4.7ms)
+Completed 200 OK in 424ms (Views: 417.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:23:50 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (7.3ms)
+Completed 200 OK in 133ms (Views: 127.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:24:38 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/yoshiya/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (45.1ms)
+Completed 200 OK in 416ms (Views: 372.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:24:55 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (12.4ms)
+Completed 200 OK in 88ms (Views: 80.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:25:34 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (13.3ms)
+Completed 200 OK in 133ms (Views: 126.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:26:22 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (7.1ms)
+Completed 200 OK in 121ms (Views: 109.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:28:36 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (161.3ms)
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( audio.js )` to `config/initializers/assets.rb` and restart your server):
+    1: = javascript_include_tag 'audio.js'
+    2: 
+    3: = flash[:errror]
+    4: = flash[:success]
+  
+app/views/audio/show.html.slim:1:in `_app_views_audio_show_html_slim__1816121953352642698_70231869711240'
+Started GET "/audio/5" for ::1 at 2020-04-26 17:29:35 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/yoshiya/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (1.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (232.7ms)
+Completed 500 Internal Server Error in 288ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( audio.js )` to `config/initializers/assets.rb` and restart your server):
+    1: = javascript_include_tag 'audio.js'
+    2: 
+    3: = flash[:errror]
+    4: = flash[:success]
+  
+app/views/audio/show.html.slim:1:in `_app_views_audio_show_html_slim___1838277813310996326_70115583539400'
+Started GET "/audio/5" for ::1 at 2020-04-26 17:29:58 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (5.0ms)
+Completed 200 OK in 136ms (Views: 127.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:31:32 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (4.3ms)
+Completed 200 OK in 159ms (Views: 148.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:33:54 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.8ms)
+Completed 200 OK in 112ms (Views: 104.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:34:16 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (6.5ms)
+Completed 200 OK in 89ms (Views: 82.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:36:17 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (8.6ms)
+Completed 200 OK in 119ms (Views: 111.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:36:45 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (4.9ms)
+Completed 200 OK in 99ms (Views: 92.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:38:23 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (8.1ms)
+Completed 200 OK in 101ms (Views: 91.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:38:50 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.5ms)
+Completed 200 OK in 80ms (Views: 74.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:39:22 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (7.2ms)
+Completed 200 OK in 128ms (Views: 118.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:39:53 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (4.8ms)
+Completed 200 OK in 110ms (Views: 103.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:40:28 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (4.8ms)
+Completed 200 OK in 92ms (Views: 86.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:40:41 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (4.6ms)
+Completed 200 OK in 88ms (Views: 82.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:54:31 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.6ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (39.6ms)
+Completed 200 OK in 245ms (Views: 213.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:54:45 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.8ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (54.4ms)
+Completed 200 OK in 200ms (Views: 192.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 17:55:01 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.8ms)
+Completed 200 OK in 121ms (Views: 111.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:17:03 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (39.7ms)
+Completed 200 OK in 231ms (Views: 205.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:21:07 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.0ms)
+Completed 200 OK in 112ms (Views: 103.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:21:37 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (7.7ms)
+Completed 200 OK in 50ms (Views: 45.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:22:42 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.4ms)
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:24:50 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (6.2ms)
+Completed 200 OK in 96ms (Views: 91.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:25:01 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (11.0ms)
+Completed 200 OK in 54ms (Views: 48.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:25:30 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (8.3ms)
+Completed 200 OK in 81ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:26:46 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (6.1ms)
+Completed 200 OK in 86ms (Views: 79.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:27:24 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (7.3ms)
+Completed 200 OK in 80ms (Views: 75.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:27:51 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (8.3ms)
+Completed 200 OK in 94ms (Views: 88.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:37:08 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (5.0ms)
+Completed 200 OK in 115ms (Views: 107.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:37:25 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (6.6ms)
+Completed 200 OK in 42ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:37:42 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.6ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (12.3ms)
+Completed 200 OK in 99ms (Views: 92.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:39:30 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (7.6ms)
+Completed 200 OK in 135ms (Views: 119.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:45:18 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (17.6ms)
+Completed 200 OK in 142ms (Views: 134.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:46:53 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (7.7ms)
+Completed 200 OK in 81ms (Views: 74.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:50:41 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (6.1ms)
+Completed 200 OK in 95ms (Views: 86.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:58:08 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (6.0ms)
+Completed 200 OK in 85ms (Views: 77.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 18:59:30 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (8.0ms)
+Completed 200 OK in 42ms (Views: 34.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 19:01:07 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (5.1ms)
+Completed 200 OK in 114ms (Views: 99.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 19:01:57 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (5.6ms)
+Completed 200 OK in 90ms (Views: 75.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 19:07:41 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (10.0ms)
+Completed 200 OK in 83ms (Views: 77.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-26 19:16:16 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (185.7ms)
+Completed 200 OK in 466ms (Views: 439.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:12:00 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.7ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (92.9ms)
+Completed 200 OK in 273ms (Views: 238.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:20:41 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (12.0ms)
+Completed 200 OK in 135ms (Views: 126.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:20:59 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (16.0ms)
+Completed 200 OK in 90ms (Views: 84.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:21:28 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (10.5ms)
+Completed 200 OK in 52ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:22:16 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (18.7ms)
+Completed 200 OK in 87ms (Views: 80.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:23:00 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (21.7ms)
+Completed 200 OK in 104ms (Views: 85.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:26:10 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Unexpected end of file
+  /Users/yoshiya/Documents/ruby/music/app/views/audio/show.html.slim, Line 33, Column 0
+    
+    ^
+):
+    30: 
+    31: 
+    32: p 以下のボタンで選択した範囲を再生する
+    33: button id="play-button" onclick="playPortion();" 選択した部分を再生
+  
+app/views/audio/show.html.slim:33
+Started GET "/audio/5" for ::1 at 2020-04-27 17:26:46 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (8.7ms)
+Completed 200 OK in 128ms (Views: 114.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:27:44 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (37.5ms)
+Completed 200 OK in 169ms (Views: 155.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:33:38 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (1.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (25.4ms)
+Completed 200 OK in 132ms (Views: 109.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:34:51 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (18.4ms)
+Completed 200 OK in 242ms (Views: 227.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:36:15 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (10.2ms)
+Completed 200 OK in 90ms (Views: 84.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:36:55 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.7ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (7.9ms)
+Completed 200 OK in 131ms (Views: 121.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:38:36 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (14.4ms)
+Completed 200 OK in 134ms (Views: 117.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:39:13 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (12.2ms)
+Completed 200 OK in 92ms (Views: 85.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:40:42 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (24.9ms)
+Completed 200 OK in 172ms (Views: 162.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:42:22 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.6ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (8.1ms)
+Completed 200 OK in 106ms (Views: 97.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:43:01 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (12.7ms)
+Completed 200 OK in 101ms (Views: 95.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:45:05 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (15.4ms)
+Completed 200 OK in 125ms (Views: 110.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:45:12 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.5ms)
+Completed 200 OK in 39ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:45:48 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (13.5ms)
+Completed 200 OK in 91ms (Views: 85.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:45:56 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.0ms)
+Completed 200 OK in 130ms (Views: 124.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 17:47:45 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (36.0ms)
+Completed 200 OK in 232ms (Views: 219.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 19:03:03 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (1.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (64.4ms)
+Completed 200 OK in 206ms (Views: 189.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 19:03:15 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (20.9ms)
+Completed 200 OK in 70ms (Views: 58.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-27 19:03:49 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (1.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (23.3ms)
+Completed 200 OK in 136ms (Views: 126.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 02:57:52 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (1.8ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (45.1ms)
+Completed 200 OK in 150ms (Views: 131.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:00:25 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.2ms)
+Completed 200 OK in 144ms (Views: 136.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:01:33 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.3ms)
+Completed 200 OK in 120ms (Views: 112.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:04:37 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Unexpected text after closed tag
+  /Users/yoshiya/Documents/ruby/music/app/views/audio/show.html.slim, Line 25, Column 15
+    input type=""/ id="start-time" onchange="validateTimeOrder;"
+                   ^
+):
+    22: 
+    23: button id="time-button" onclick="getStartTime();" 現在の時間を取得
+    24: p 再生開始時間:
+    25: input type=""/ id="start-time" onchange="validateTimeOrder;"
+    26: 
+    27: button id="time-button" onclick="getFinishTime();" 現在の時間を取得
+    28: p 再生終了時間:
+  
+app/views/audio/show.html.slim:25
+Started GET "/audio/5" for ::1 at 2020-04-28 03:04:56 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.2ms)
+Completed 200 OK in 102ms (Views: 96.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:05:15 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (9.0ms)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:06:01 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (14.8ms)
+Completed 200 OK in 88ms (Views: 82.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:06:34 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (18.9ms)
+Completed 200 OK in 140ms (Views: 130.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:07:13 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.9ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (10.7ms)
+Completed 200 OK in 55ms (Views: 46.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:09:12 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (11.4ms)
+Completed 200 OK in 108ms (Views: 102.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:10:52 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (13.1ms)
+Completed 200 OK in 115ms (Views: 108.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:11:06 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (10.8ms)
+Completed 200 OK in 56ms (Views: 51.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:11:42 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (7.9ms)
+Completed 200 OK in 60ms (Views: 55.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:13:49 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (12.0ms)
+Completed 200 OK in 102ms (Views: 97.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:15:06 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (7.2ms)
+Completed 200 OK in 85ms (Views: 79.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:15:28 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (15.5ms)
+Completed 200 OK in 55ms (Views: 49.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:17:18 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (8.8ms)
+Completed 200 OK in 74ms (Views: 65.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:17:46 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (20.1ms)
+Completed 200 OK in 65ms (Views: 54.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio" for ::1 at 2020-04-28 03:18:02 +0900
+Processing by AudioController#index as HTML
+  Rendering audio/index.html.slim within layouts/application
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT "audios".* FROM "audios"[0m
+  ↳ app/views/audio/index.html.slim:17
+  Rendered audio/index.html.slim within layouts/application (26.0ms)
+Completed 200 OK in 67ms (Views: 59.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audio/5" for ::1 at 2020-04-28 03:18:10 +0900
+Processing by AudioController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/audio_controller.rb:11
+  Rendering audio/show.html.slim within layouts/application
+  Rendered audio/show.html.slim within layouts/application (19.4ms)
+Completed 200 OK in 60ms (Views: 53.1ms | ActiveRecord: 0.3ms)
+
+

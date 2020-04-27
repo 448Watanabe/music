@@ -1,0 +1,22 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://coffeescript.org/
+
+
+x = document.getElementsByID('audioーid')
+console.log x
+
+# 詳細ページでのみオーディオ情報を取得
+audio = new Audio
+# audioの作成
+# audio.src = 'sound.mp3'
+audio.src = "/uploads/audio/file/5/20sec_Billie_Eilish_Watches_Fan_Covers_on_YouTube___Glamour_21Z4RIOFhMA.mp3"
+# 音声ファイルの指定
+audio.load()
+# audioの読み込み
+console.log 'meta読み込み前:', audio.duration
+# 総時間の取得(meta読み込み前に取得すると失敗する)
+audio.addEventListener 'loadedmetadata', (e) ->
+  console.log audio.duration
+  # 総時間の取得
+  return

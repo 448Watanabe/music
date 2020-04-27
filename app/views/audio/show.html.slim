@@ -1,3 +1,35 @@
 = flash[:errror]
 = flash[:success]
-= @audio.nil? ? "its nil" : @audio.inspect 
+
+- @audio.nil? ? "its nil" : @audio.inspect
+
+center
+    table style="margin:10px;"
+        thead
+            tr
+                th Name
+                th Audio
+                th Note
+    
+    
+        tbody
+            tr
+                th =@audio.name
+                th
+                    audio id="audio-id" controls=true autoplay=false loop=false muted=false
+                              source src=@audio.file type="audio/mp3"
+                th =@audio.note
+
+    button id="time-button" onclick="getStartTime();" 現在の時間を取得
+    p 再生開始時間:
+    input id="start-time" value=0
+    br
+    button id="time-button" onclick="getFinishTime();" 現在の時間を取得
+    p 再生終了時間:
+    input id="finish-time" value=0
+
+
+    p 以下のボタンで選択した範囲を再生する
+    button id="play-button" onclick="playPortion();" 選択した部分を再生
+
+    button id="play-button" onclick="pausePortion();" 選択した部分を止める
